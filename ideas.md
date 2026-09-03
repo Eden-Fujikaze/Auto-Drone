@@ -1,6 +1,6 @@
 | Hardware | Vote 1 | Vote 2 |
 | - | - | - |
-| Industry line hand | [x] | [] |
+| Industry line hand | - [x] | [] |
 | Quad | [x] | [] |
 | ~~Arcade game emulator~~ | [] | [] |
 | Drone | [x] | [] |
