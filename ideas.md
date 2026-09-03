@@ -1,14 +1,14 @@
 ## Hardware
-- Industry line hand [] []
-- Quad [] []
+- Industry line hand [x] []
+- Quad [x] []
 - ~~Arcade game emulator~~ [] []
-- Drone [] []
+- Drone [x] []
 -
 ## Software
-+ Neural Network usage [] []
-    - Touhou [] []
++ Neural Network usage [x] []
+    - Touhou [x] []
 + Website [] []
 + Game [] []
     - Super Informatyk Boy [] []
 ## Mix
-- Neural Network used on hardware
+- Neural Network used on hardware [x] []
