@@ -1,5 +1,5 @@
 - [ ] Write my personal opinions regarding a couple of project options I find interesting.
   - [ ] Arm
   - [ ] Drone
-  - [ ] Tinfoil Hat
+  - [ x ] Tinfoil Hat
   - [ ] Machine Learning
