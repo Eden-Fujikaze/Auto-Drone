@@ -3,8 +3,9 @@ Interest in it's creation: 100/100
 Impressiveness: 26/100 (not very)
 Creativity Factor: 62/100 (seems original)
 # Vision
-## Function
-The tinfoil hat would function as a transceiver.
+## Functions
+- The tinfoil hat would function as a transceiver.
+- The tinfoil hat would serve as a signal jammer.
 ## Execution
 The tip of hat would be the point of transmitting and receiving.
 The inside of the hat would ample amount of space for the electronics.
