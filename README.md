@@ -42,4 +42,10 @@ See more at [problem](docs/problems.md)
 ### Unorganized risks
 - Delivery of the UWB module taking a long time
 - Drone harming used components via crashing
-
+```mermaid
+gantt
+    title Projekt Dron UWB
+    dateFormat MM
+    section miau
+    Budowanie drona :t01, 09, 3d
+```
