@@ -23,3 +23,23 @@ Achieve fully autonomous flight with a certain deadzone for safety.
 #### Sub-Goals
 - Multiple flight modes.
 - A battery life of at least 30 minutes.
+### What is not included
+- Handling multiple lures or drones
+- Obstacle detection and avoidance
+- Legal certification
+- Flight in harsh conditions
+### Unorganized milestones
+- Finish hardware research and choices
+- Obtaining drone certification
+- Start demoing a lure - drone ping app via WiFi because of the lack of an UWB module on hand
+- Iterate concept art
+- Research how remote control communication works
+- Design a bare bones remote control system
+- Design a 3d printable body for the drone
+- Start assembly on a bare bones frame
+### Problems
+See more at [problem](docs/problems.md)
+### Unorganized risks
+- Delivery of the UWB module taking a long time
+- Drone harming used components via crashing
+
