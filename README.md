@@ -45,7 +45,35 @@ See more at [problem](docs/problems.md)
 ```mermaid
 gantt
     title Projekt Dron UWB
-    dateFormat MM
-    section miau
-    Budowanie drona :t01, 09, 3d
+    dateFormat YYYY-MM-DD
+    axisFormat %b
+
+    section Research
+    Hardware research and choices         :t01, 2026-10-01, 40d
+    Research remote control communication :t02, 2026-10-01, 50d
+
+    section Design
+    Iterate concept art                   :t03, 2026-10-23, 25d
+    Design 3D-printable drone body        :t04, 2026-11-01, 30d
+    Design lure                           :t05, 2026-11-01, 25d
+
+    section Software
+    Develop drone and control software    :t06, 2026-10-25, 120d
+    Software updates and adjustments      :t07, 2027-01-15, 60d
+
+    section Assembly
+    Purchase parts                        :t08, after t05, 35d
+    Assemble lure                         :t09, after t05, 20d
+    Assemble bare-bones drone frame       :t10, after t04, 30d
+    Integrate UWB modules                 :t11, after t10, 30d
+    Fully assemble droned                 :milestone, t16, after t11, 0d
+
+    section Certification
+    Drone certification                   :crit, t11, 2027-01-01, 31d
+    
+    section Testing
+    Autonomous following and deadzone     :t12, 2027-01-20, 35d
+    Multiple flight modes                 :t13, 2027-02-01, 25d
+    Battery life testing                  :t14, 2027-02-10, 20d
+    Final testing and improvements        :t15, 2027-02-20, 25d
 ```
