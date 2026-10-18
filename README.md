@@ -26,19 +26,11 @@ Achieve fully autonomous flight with a certain deadzone for safety.
 ### What is not included
 - Handling multiple lures or drones
 - Obstacle detection and avoidance
-- Legal certification
 - Flight in harsh conditions
-### Unorganized milestones
-- Finish hardware research and choices
-- Obtaining drone certification
-- Start demoing a lure - drone ping app via WiFi because of the lack of an UWB module on hand
-- Iterate concept art
-- Research how remote control communication works
-- Design a bare bones remote control system
-- Design a 3d printable body for the drone
-- Start assembly on a bare bones frame
 ### Problems
-See more at [problem](docs/problems.md)
+See more at [problems](docs/problems.md)
+<hr>
+Please also look toward [docs](docs/) to see extra files and in progress choices.
 ### Unorganized risks
 - Delivery of the UWB module taking a long time
 - Drone harming used components via crashing
@@ -66,14 +58,15 @@ gantt
     Assemble lure                         :t09, after t05, 20d
     Assemble bare-bones drone frame       :t10, after t04, 30d
     Integrate UWB modules                 :t11, after t10, 30d
-    Fully assemble droned                 :milestone, t16, after t11, 0d
+    Fully assemble droned                 :milestone, t17, after t11, 0d
 
     section Certification
-    Drone certification                   :crit, t11, 2027-01-01, 31d
+    Drone certification                   :crit, t12, 2027-01-01, 31d
     
     section Testing
-    Autonomous following and deadzone     :t12, 2027-01-20, 35d
-    Multiple flight modes                 :t13, 2027-02-01, 25d
-    Battery life testing                  :t14, 2027-02-10, 20d
-    Final testing and improvements        :t15, 2027-02-20, 25d
+    Autonomous following and deadzone     :t13, 2027-01-20, 35d
+    Multiple flight modes                 :t14, 2027-02-01, 25d
+    Battery life testing                  :t15, 2027-02-10, 20d
+    Final testing and improvements        :t16, 2027-02-20, 25d
 ```
+PS: Lure development will already be in progress using WiFi to have a working demo. But the UWB version will be reinterpreted using our demo as noted on the Gantt diagram.
