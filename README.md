@@ -34,6 +34,7 @@ Please also look toward [docs](docs/) to see extra files and in progress choices
 ### Unorganized risks
 - Delivery of the UWB module taking a long time
 - Drone harming used components via crashing
+
 ```mermaid
 gantt
     title Projekt Dron UWB
