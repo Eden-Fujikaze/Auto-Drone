@@ -29,8 +29,8 @@ Achieve fully autonomous flight with a certain deadzone for safety.
 - Flight in harsh conditions
 ### Problems
 See more at [problems](docs/problems.md)
-<hr>
-Please also look toward [docs](docs/) to see extra files and in progress choices.
+
+Also look toward [docs](docs/) to see extra files and in progress choices.
 ### Unorganized risks
 - Delivery of the UWB module taking a long time
 - Drone harming used components via crashing
