@@ -50,8 +50,10 @@ The differentiation here is:
 | $t$ | flight time | 0.5 h | 0.9 |
 
 $$
+\begin{aligned}
 m_b=\frac{t(m_0+\eta P_e)}{\frac{u \rho \eta}{1000}-t} \\
-E = \frac{\rho m_b}{1000}
+E_{req} = \frac{\rho m_b}{1000}
+\end{aligned}
 $$
 
 ```mermaid
