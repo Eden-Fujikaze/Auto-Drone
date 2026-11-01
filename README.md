@@ -44,11 +44,11 @@ The differentiation here is:
 
 | ID | Risk | Probability | Impact | Score | Priority |
 | - | - | - | - | - | - |
-| R1 | Shell may add weight because of 3d printing artifacts and drag and may disturb prop airflow | | | | |
-| R2 | Drone/component self injury while testing | | | | |
-| R3 | Project deadline slips | | | | |
-| R4 | Battery fire hazard | | | | |
-| R5 | No legal certification in time for tests | | | | |
+| R1 | Shell may add weight because of 3d printing artifacts and drag and may disturb prop airflow | 0.2 | 0.4 |  | Low |
+| R2 | Drone/component self injury while testing | 0.35 | 0.8 | | Mid |
+| R3 | Project deadline slips | 0.7 | 1 | | High |
+| R4 | Battery fire hazard | 0.2 | 1 | | The hazard |
+| R5 | No legal certification in time for tests | 0.4 | 0.8 | | Mid-High |
 
 </details>
 <details>
