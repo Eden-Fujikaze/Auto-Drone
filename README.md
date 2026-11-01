@@ -39,8 +39,9 @@ The differentiation here is:
 | Open decision | Not yet made |
 | Expected cost/Problem | Will happen |
 
-### Risks
- 
+<details>
+<summary><b>Risks</b></summary>
+
 | ID | Risk | Probability | Impact | Score | Priority |
 | - | - | - | - | - | - |
 | R1 | Shell may add weight because of 3d printing artifacts and drag and may disturb prop airflow | | | | |
@@ -49,6 +50,7 @@ The differentiation here is:
 | R4 | Battery fire hazard | | | | |
 | R5 | No legal certification in time for tests | | | | |
 
+</details>
 <details>
 <summary><b>Open decisions</b></summary>
 
@@ -100,8 +102,6 @@ See more at [problems](docs/problems.md)
  
 </details>
 
-## TODO
-
 <details>
 <summary><b>TODO</b></summary>
 
@@ -133,6 +133,7 @@ See more at [problems](docs/problems.md)
 | $t$ | flight time | 0.5 h | 0.9 |
 
 $m_b=\frac{t(m_0+\eta P_e)}{\frac{u \rho \eta}{1000}-t}$
+
 $E_{req} = \frac{\rho m_b}{1000}$
  
 </details>
