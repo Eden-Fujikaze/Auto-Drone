@@ -45,27 +45,23 @@ O5. How do we height hold.
 O6. Budget figure.
 ### Issues
 I1. Knowledge gap on flight-controller, ESC and firmware topics.
-I2. Hover efficiency not known.
-I3. No real budget figure.
 ### Risks
-R1. Shell adds weight and drag and may disturb prop airflow
+R1. Shell may add weight because of 3d printing artifacts and drag and may disturb prop airflow
 R2. Drone/component self injury while testing
 R3. Project deadline slips
 R4. Battery fire hazard
-R5. Learning curve offsets the project
+R5. No legal certification in time for tests
 ### Decisions
 D1. Self-funded, no school budget
 D2. UWB for lure comms, BU04 on the drone for angle
 D3. Fixed height, 2D following only
 ### Problems
 See more at [problems](docs/problems.md)
-P1. Hover efficiency is unverified, so the 30 min goal could be missed
-P2. Long UWB delivery
-P3. Flight controller not picked
-P4. No certification
+P1. Long UWB delivery. Solution: Order ASAP
 ### Not Enough Info
 N1. UWB AoA is not precise enough
 N2. Refresh rate does not allow stable and smooth following
+N3. Hover efficiency is unverified, so the 30 min goal could be missed
 
 #### TODO:
 - [ ] Research NEI section to organize it into risks, problems etc.
