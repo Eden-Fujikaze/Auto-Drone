@@ -131,7 +131,7 @@ See more at [problems](docs/problems.md)
 - [ ] Check the BU04 and BU03 datasheets for AoA details
 - [ ] Order the UWB modules
 - [ ] Check barometer vs alternatives for height hold (downward rangefinder, optical flow)
-- [ ] What the fuck are escs and a flight controller
+- [ ] What are escs and a flight controller
 - [ ] Learn how to pick the correct brushless motors
 - [ ] What is UART
 
