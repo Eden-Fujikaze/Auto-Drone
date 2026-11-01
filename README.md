@@ -39,18 +39,37 @@ The differentiation here is:
 | Open decision | Not yet made |
 | Expected cost/Problem | Will happen |
 
+### Risks
+
 <details>
 <summary><b>Risks</b></summary>
 
 | ID | Risk | Probability | Impact | Score | Priority |
 | - | - | - | - | - | - |
-| R1 | Shell may add weight because of 3d printing artifacts and drag and may disturb prop airflow | 0.2 | 0.4 |  | Low |
-| R2 | Drone/component self injury while testing | 0.35 | 0.8 | | Mid |
-| R3 | Project deadline slips | 0.7 | 1 | | High |
-| R4 | Battery fire hazard | 0.2 | 1 | | The hazard |
+| R1 | Shell may add weight because of 3d printing artifacts and drag and may disturb prop airflow | 0.2 | 0.4 | 0.08  | Low |
+| R2 | Drone/component self injury while testing | 0.35 | 0.8 | 0.28 | Mid |
+| R3 | Project deadline slips | 0.7 | 1 | 0.7 | High |
+| R4 | Battery fire hazard | 0.2 | 1 | 0.2 | Critical |
 | R5 | No legal certification in time for tests | 0.4 | 0.8 | | Mid-High |
 
 </details>
+
+<details>
+<summary><b>Risk response</b></summary>
+
+| ID | Preventative actions | Contingency plan |
+| - | - | - |
+| R1 | Take the slicers predicted mass and confirm with weigh in after print, then use that as $m_0$ | Fly without shell, reprint lighter |
+| R2 | Don't go autonomous until manual is verified, do first flight in a secure area, config a kill switch, test motor outputs without props | Stop testing after anything uncontrollable happens |
+| R3 | Minimum demo over everything, track progress weekly, order long-lead parts right now | 2 weeks wiggle on the deadline, project can keep on going after but we miss open days |
+| R4 | Constant swelling inspection, keep a bag of sand on hand | Disconnect only if safe, call 112 or/and use a fire extinguisher |
+| R5 | Find out the reqs right now | Theoretically the school is private property and with permission we can fly inside |
+| N1 | Read the datasheets and attempt to disprove this theory | Lower the speed and tighten the deadzone, use Bluetooth/WiFi | 
+| N2 | Check the datasheet latency and rate, tune the controller, smooth via lerp | Reduce max speed | 
+| N3 | Get true nums from datasheet, measure it in real life | Lower mass/battery life expentancy and battery size |
+
+</details>
+
 <details>
 <summary><b>Open decisions</b></summary>
 
