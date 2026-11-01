@@ -31,7 +31,7 @@ Achieve fully autonomous flight with a certain deadzone for safety.
 See more at [problems](docs/problems.md)
 ### Hardware list, prices and weight estimates
 Updated often at [hardware list](docs/hardware.md)
-### Unorganized risks
+### Risks
 The differentiation here is:
 | Type | Risk | Where |
 | - | - | - |
@@ -39,6 +39,18 @@ The differentiation here is:
 | Issue | already true | R3, R4, N2. R2, R6, R8, R14 |
 | open dicision | not yet made | R11, N3. R6 |
 | expected cost | will happen | R12 |
+
+Assumption	Drone is 450 g without battery
+Open decision	Flight time target (README says 30 min)
+Open decision	Battery chemistry and capacity. My estimate points to 6S Li-ion at 300 to 400 g
+Risk	Hover efficiency is unverified, so the 30 min goal could be missed
+Risk	Li-ion pack, BMS and charger cost may strain the budget
+
+#### TODO:
+- [ ] Find thrust and power tables for the shortlisted 2306 motor and 5" prop to replace $\eta$ guess 
+- [ ] Confirm the ESC and flight controller support 6S
+- [ ] Check the BU04 and BU03 datasheets for AoA details
+- [ ] Check barometer vs alternatives for height hold (downward rangefinder, optical flow)
 
 | Symbol | Meaning | Value | Confidence |
 | - | - | - | - |
