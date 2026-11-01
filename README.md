@@ -31,18 +31,18 @@ Achieve fully autonomous flight with a certain deadzone for safety.
 Updated often at [hardware list](docs/hardware.md)
 ## Risks
 The differentiation here is:
-Risk: Might happen with no clear solution
-Issue: already true
-Open decision: not yet made
-Expected cost/Problem: will happen
+Risk: Might happen
+Issue: Already true
+Open decision: Not yet made
+Expected cost/Problem: Will happen
 ### Open decisions
 O1. What FC
 O2. FC firmware.
 O3. ESP32c6 and FC interface and protocol.
 O4. Frame, bought or printed. 
-O7. Final flight time target
-O5. How do we height hold.
-O6. Budget figure.
+O5. Final flight time target
+O6. How do we height hold.
+O7. Budget figure.
 ### Issues
 I1. Knowledge gap on flight-controller, ESC and firmware topics.
 ### Risks
@@ -65,9 +65,11 @@ N3. Hover efficiency is unverified, so the 30 min goal could be missed
 
 #### TODO:
 - [ ] Research NEI section to organize it into risks, problems etc.
+- [ ] Find out the legal requirements to fly
 - [ ] Find thrust and power tables for the shortlisted 2306 motor and 5" prop to replace $\eta$ guess 
 - [ ] Confirm the ESC and flight controller support 6S
 - [ ] Check the BU04 and BU03 datasheets for AoA details
+- [ ] Order the UWB modules
 - [ ] Check barometer vs alternatives for height hold (downward rangefinder, optical flow)
 - [ ] What the fuck are escs and a flight controller
 - [ ] Learn how to pick the correct brushless motors
