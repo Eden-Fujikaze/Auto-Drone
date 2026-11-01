@@ -27,30 +27,55 @@ Achieve fully autonomous flight with a certain deadzone for safety.
 - Handling multiple lures or drones
 - Obstacle detection and avoidance
 - Flight in harsh conditions
-### Problems
-See more at [problems](docs/problems.md)
 ### Hardware list, prices and weight estimates
 Updated often at [hardware list](docs/hardware.md)
-### Risks
+## Risks
 The differentiation here is:
-| Type | Risk | Where |
-| - | - | - |
-| Risk | Might happen | R1, R5, R7, R9, R10, R13, N1, N4. R2, R6, R8, R14 |
-| Issue | already true | R3, R4, N2. R2, R6, R8, R14 |
-| open dicision | not yet made | R11, N3. R6 |
-| expected cost | will happen | R12 |
-
-Assumption	Drone is 450 g without battery
-Open decision	Flight time target (README says 30 min)
-Open decision	Battery chemistry and capacity. My estimate points to 6S Li-ion at 300 to 400 g
-Risk	Hover efficiency is unverified, so the 30 min goal could be missed
-Risk	Li-ion pack, BMS and charger cost may strain the budget
+Risk: Might happen with no clear solution
+Issue: already true
+Open decision: not yet made
+Expected cost/Problem: will happen
+### Open decisions
+O1. What FC
+O2. FC firmware.
+O3. ESP32c6 and FC interface and protocol.
+O4. Frame, bought or printed. 
+O7. Final flight time target
+O5. How do we height hold.
+O6. Budget figure.
+### Issues
+I1. Knowledge gap on flight-controller, ESC and firmware topics.
+I2. Hover efficiency not known.
+I3. No real budget figure.
+### Risks
+R1. Shell adds weight and drag and may disturb prop airflow
+R2. Drone/component self injury while testing
+R3. Project deadline slips
+R4. Battery fire hazard
+R5. Learning curve offsets the project
+### Decisions
+D1. Self-funded, no school budget
+D2. UWB for lure comms, BU04 on the drone for angle
+D3. Fixed height, 2D following only
+### Problems
+See more at [problems](docs/problems.md)
+P1. Hover efficiency is unverified, so the 30 min goal could be missed
+P2. Long UWB delivery
+P3. Flight controller not picked
+P4. No certification
+### Not Enough Info
+N1. UWB AoA is not precise enough
+N2. Refresh rate does not allow stable and smooth following
 
 #### TODO:
+- [ ] Research NEI section to organize it into risks, problems etc.
 - [ ] Find thrust and power tables for the shortlisted 2306 motor and 5" prop to replace $\eta$ guess 
 - [ ] Confirm the ESC and flight controller support 6S
 - [ ] Check the BU04 and BU03 datasheets for AoA details
 - [ ] Check barometer vs alternatives for height hold (downward rangefinder, optical flow)
+- [ ] What the fuck are escs and a flight controller
+- [ ] Learn how to pick the correct brushless motors
+- [ ] What is UART
 
 | Symbol | Meaning | Value | Confidence |
 | - | - | - | - |
