@@ -32,8 +32,27 @@ See more at [problems](docs/problems.md)
 ### Hardware list, prices and weight estimates
 Updated often at [hardware list](docs/hardware.md)
 ### Unorganized risks
-- Delivery of the UWB module taking a long time
-- Drone harming used components via crashing
+The differentiation here is:
+| Type | Risk | Where |
+| - | - | - |
+| Risk | Might happen | R1, R5, R7, R9, R10, R13, N1, N4. R2, R6, R8, R14 |
+| Issue | already true | R3, R4, N2. R2, R6, R8, R14 |
+| open dicision | not yet made | R11, N3. R6 |
+| expected cost | will happen | R12 |
+
+| Symbol | Meaning | Value | Confidence |
+| - | - | - | - |
+| $m_0$ | Drone mass - battery | 450 | 0.8 |
+| $\eta$ | Hover efficiency | $7 \frac{g}{W}$ | 0.2 |
+| $P_e$ | Electronic drain | 5 W | 0.5 |
+| $u$ | Usable charge to keep reserver | 80% | 1 |
+| $\rho$ | Charge per kg | LiPo $145 \frac{Wh}{kg}$, Li-on $230 \frac{Wh}{kg}$ | 0.5 |
+| $t$ | flight time | 0.5 h | 0.9 |
+
+$$
+m_b=\frac{t(m_0+\eta P_e)}{\frac{u \rho \eta}{1000}-t} \\
+E = \frac{\rho m_b}{1000}
+$$
 
 ```mermaid
 gantt
