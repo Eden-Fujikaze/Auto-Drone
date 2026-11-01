@@ -102,6 +102,9 @@ See more at [problems](docs/problems.md)
 
 ## TODO
 
+<details>
+<summary><b>TODO</b></summary>
+
 - [ ] Research NEI section to organize it into risks, problems etc.
 - [ ] Find out the legal requirements to fly
 - [ ] Find thrust and power tables for the shortlisted 2306 motor and 5" prop to replace $\eta$ guess 
@@ -112,6 +115,8 @@ See more at [problems](docs/problems.md)
 - [ ] What the fuck are escs and a flight controller
 - [ ] Learn how to pick the correct brushless motors
 - [ ] What is UART
+
+</details>
 
 ## Battery model
 
@@ -126,13 +131,15 @@ See more at [problems](docs/problems.md)
 | $u$ | Usable charge to keep reserver | 80% | 1 |
 | $\rho$ | Charge per kg | LiPo $145 \frac{Wh}{kg}$, Li-on $230 \frac{Wh}{kg}$ | 0.5 |
 | $t$ | flight time | 0.5 h | 0.9 |
- 
-$$
+
+
+```math
 \begin{aligned}
 m_b=\frac{t(m_0+\eta P_e)}{\frac{u \rho \eta}{1000}-t} \\
 E_{req} = \frac{\rho m_b}{1000}
 \end{aligned}
-$$
+```
+
  
 </details>
 
