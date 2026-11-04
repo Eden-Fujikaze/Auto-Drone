@@ -123,17 +123,55 @@ See more at [problems](docs/problems.md)
 
 <details>
 <summary><b>TODO</b></summary>
+Potencial gold mine of information - https://www.reddit.com/r/Multicopter/wiki/index/
 
 - [ ] Research NEI section to organize it into risks, problems etc.
-- [ ] Find out the legal requirements to fly
+- [x] Find out the legal requirements to fly
+  - Register at https://drony.gov.pl/
+  - pass the exam for the A1/A3 subcategory (The drone is categorized as "drone constructed for private use")
+  - ubezpieczenie OC
+  - Sources: https://ulc.gov.pl/drony/informacje-ogolne, https://ulc.gov.pl/drony/kategoria-otwarta-informacje
 - [ ] Find thrust and power tables for the shortlisted 2306 motor and 5" prop to replace $\eta$ guess 
 - [ ] Confirm the ESC and flight controller support 6S
-- [ ] Check the BU04 and BU03 datasheets for AoA details
+- [x] Check the BU04 and BU03 datasheets for AoA details
+  | Parameter | BU03 | BU04 |
+  | --- | --- | --- |
+  | UWB chipset | Decawave DW3000 | Decawave DW3000 |
+  | MCU | Not specified as integrated | STM32F103 integrated |
+  | Antenna configuration | Single onboard ceramic antenna | Dual onboard PCB antennas |
+  | External antenna | Not specified | Dual IPEX antenna support |
+  | Antenna channels | Single antenna | Dual antenna channels |
+  | PDOA support | Listed | Listed |
+  | TDOA support | Listed | Listed |
+  | Two-way ranging | Yes | Yes |
+  | Positioning accuracy | Up to 10 cm (claimed) | Up to 10 cm (claimed) |
+  | UWB channels | CH5 and CH9 | CH5 and CH9 |
+  | CH5 frequency | 6489.5 MHz | 6489.5 MHz |
+  | CH9 frequency | 7987.2 MHz | 7987.2 MHz |
+  | Channel bandwidth | 499.2 MHz | 499.2 MHz |
+  | Maximum data rate | 6.8 Mbps | 6.8 Mbps |
+  | Interface | SPI | SPI, UART, I2C |
+  | Available GPIO | 9 | 20 |
+  | Supply voltage | 2.5–3.6 V | 2.5–3.6 V |
+  | Recommended peak supply current | Above 200 mA | Above 500 mA |
+  | Module dimensions | 23 × 13 × 2.5 mm | 35.5 × 33.5 × 3.4 mm |
+  - Sources: 
+    - BU03 - https://en.ai-thinker.com/Uploads/file/20240927/20240927135255_72398.pdf
+    - BU04 - https://en.ai-thinker.com/Uploads/file/20240927/20240927190544_82504.pdf
 - [ ] Order the UWB modules
 - [ ] Check barometer vs alternatives for height hold (downward rangefinder, optical flow)
-- [ ] What are escs and a flight controller
+- [x] What are escs and a flight controller
+  - ESC (Electronic Speed Controller) - "regulates the speed and rotation of a drone motor by managing the electrical current delivered to it. Acting as a communication bridge between the flight controller and the motor, the ESC interprets commands from the flight controller and adjusts motor speed accordingly."
+  - Flight Controller - "A flight controller (sometimes called FC) is a small board you have in the middle of your multicopter. It has sensors (accelerometer and gyroscope, sometimes more) that let it know which way it's facing. The FC is connected between the receiver and the ESCs (electronic speed controllers). It keeps the board the way it's supposed to be. It can keep it level (autolevel) or the way you set it (without autolevel), so you won't have to keep balancing it yourself."
+  - Sources:
+    - ESC - https://www.tytorobotics.com/blogs/articles/what-is-an-esc-how-does-an-esc-work, https://www.grepow.com/blog/what-is-a-drone-esc-and-is-it-important.html
+    - Flight Controller - https://www.reddit.com/r/Multicopter/comments/35zani/beginner_what_is_a_flight_controller_and_is_the/
 - [ ] Learn how to pick the correct brushless motors
-- [ ] What is UART
+- [x] What is UART (Universal Asynchronous Receiver-Transmitter)
+  - A hardware component that allows two electronic devices to communicate by sending and receiving data one bit at a time over serial connections.
+  - Sources:
+    - https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter
+    - https://www.circuitbread.com/tutorials/uart-universal-asynchronous-receiver-transmitter
 
 </details>
 
