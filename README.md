@@ -9,7 +9,7 @@ Drone following an object (the "lure").
 Communicates with the "lure", a microcontroller carried by a person that sends a UWB signal, and identify the person holding the lure.
 Using BU03 and BU04 modules alongside and ESP32c6 we can make the following system.
 ## Budget \[M\]
-TBA
+Probably on school budget, 850 rough entry cost estimate
 ## Is it achievable \[A\]
 Considering predispositions and the planning already started the project seems completable in the given timeframe.
 ## The purpose \[R\]
@@ -96,7 +96,6 @@ The differentiation here is:
 
 | ID | Decision |
 | - | - |
-| D1 | Self-funded, no school budget |
 | D2 | UWB for lure comms, BU04 on the drone for angle |
 | D3 | Fixed height, 2D following only |
  
