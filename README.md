@@ -225,7 +225,7 @@ gantt
     Assemble lure                         :t09, after t05, 20d
     Assemble bare-bones drone frame       :t10, after t04, 30d
     Integrate UWB modules                 :t11, after t10, 30d
-    Fully assemble droned                 :milestone, t17, after t11, 0d
+    Fully assemble drone                  :milestone, t17, after t11, 0d
 
     section Certification
     Drone certification                   :crit, t12, 2027-01-01, 31d
